@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/63a45cd9254471cb683f2747
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Laptop Dell",
+    "price": 18000000,
+    "stock": 10
+}
+
+###
+PATCH  http://localhost:5000/users/63a45cd9254471cb683f2747
+Content-Type: application/json
+
+{
+    "name": "Laptop HP",
+    "price": 16000000,
+    "stock": 5
+}
+
+###
+DELETE http://localhost:5000/users/63a45c75254471cb683f2741
